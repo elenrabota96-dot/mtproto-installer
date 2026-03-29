@@ -8,7 +8,7 @@
 ## Установка на сервере (всё тянется с GitHub)
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/2FrogsStudio/mtproto-installer/main/install.sh | bash
+curl -sSL https://raw.githubusercontent.com/elenrabota96-dot/mtproto-installer/refs/heads/main/install.sh | bash
 ```
 
 Скрипт установит Docker (если нужно), скачает `docker-compose.yml`, конфиги Traefik и шаблон Telemt из репозитория [2FrogsStudio/mtproto-installer](https://github.com/2FrogsStudio/mtproto-installer), сгенерирует секрет, подставит домен маскировки и запустит контейнеры. В конце выведет ссылку вида `tg://proxy?server=...&port=443&secret=...` — добавьте её в Telegram (Настройки → Данные и память → Использовать прокси).
