@@ -9,7 +9,7 @@ services:
       - "--providers.file.directory=/etc/traefik/dynamic"
       - "--providers.file.watch=true"
     ports:
-      - "443:443"
+      - "8444:443"
     volumes:
       - ./traefik/static:/etc/traefik/static:ro
       - ./traefik/dynamic:/etc/traefik/dynamic:ro
