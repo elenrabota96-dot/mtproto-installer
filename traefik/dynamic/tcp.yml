@@ -1,7 +1,7 @@
 tcp:
   routers:
     mtproxy:
-      rule: "HostSNI(`*`)"
+      rule: "HostSNI(`vk.com`)"
       entryPoints:
         - websecure
       service: mtproxy
