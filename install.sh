@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 set -e
 
-REPO_RAW="${REPO_RAW:-https://raw.githubusercontent.com/2FrogsStudio/mtproto-installer/main}"
-INSTALL_DIR="${INSTALL_DIR:-$(pwd)/mtproxy-data}"
-FAKE_DOMAIN="${FAKE_DOMAIN:-1c.ru}"
+REPO_RAW="${REPO_RAW:-https://raw.githubusercontent.com/elenrabota96-dot/mtproto-installer/refs/heads/main}"
+INSTALL_DIR="${INSTALL_DIR:-$(pwd)/mtproxy3-data}"
+FAKE_DOMAIN="${FAKE_DOMAIN:-vk.com}"
 TELEMT_INTERNAL_PORT="${TELEMT_INTERNAL_PORT:-1234}"
-LISTEN_PORT="${LISTEN_PORT:-443}"
+LISTEN_PORT="${LISTEN_PORT:-8444}"
 
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -26,7 +26,7 @@ fetch() {
 
 rerun_cmd() {
 	if [[ "$0" == *bash* ]] || [[ "$0" == -* ]]; then
-		echo "curl -sSL https://raw.githubusercontent.com/2FrogsStudio/mtproto-installer/main/install.sh | bash"
+		echo "curl -sSL https://raw.githubusercontent.com/elenrabota96-dot/mtproto-installer/refs/heads/main/install.sh | bash"
 	else
 		local dir
 		dir="$(cd "$(dirname "$0")" && pwd)"
